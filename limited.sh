@@ -97,7 +97,7 @@ responsive > /dev/null 2>&1
  
 notifikasi() {
     cmd notification post -S bigtext -t 'FILESETTINGSX' 'Tag' 'ACTIVE'
-    wm density 400
+    wm density 190
 }
 notifikasi> /dev/null 2>&1
 else
