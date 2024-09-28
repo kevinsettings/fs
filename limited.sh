@@ -11,7 +11,7 @@ text="$1"
  done
 echo
 }
-local check_id=$(storm "https://raw.githubusercontent.com/kevinsettings/fs/refs/heads/main/idcheap.txt")
+local check_id=$(storm "https://raw.githubusercontent.com/kevinsettings/fs/refs/heads/main/idlimited.txt")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
   echo ""
