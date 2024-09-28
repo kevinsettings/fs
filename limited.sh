@@ -11,6 +11,10 @@ text="$1"
  done
 echo
 }
+local check_id=$(storm "https://raw.githubusercontent.com/kevinsettings/fs/refs/heads/main/idlimited.txt")
+local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
+if [ $check_vip = true ]; then
+  echo ""
   sleep 1
   echo ""
   echo "
@@ -95,11 +99,12 @@ notifikasi() {
     cmd notification post -S bigtext -t 'FILESETTINGSX' 'Tag' 'ACTIVE'
     wm density 400
 }
-
 notifikasi> /dev/null 2>&1
+else
   sleep 0.2
   echo ""
   sleep 0.6
   echo
   echo "${RED} berhasil terpasang"
   sleep 0.6
+fi
