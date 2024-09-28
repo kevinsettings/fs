@@ -84,7 +84,7 @@ responsive > /dev/null 2>&1
  
 sensifity() {
     cmd notification post -S bigtext -t 'FILESETTINGSX' 'Tag' 'ACTIVE'
-    wm density 350
+    wm density 210
 }
 
 sensifity > /dev/null 2>&1
