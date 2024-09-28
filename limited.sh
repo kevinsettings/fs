@@ -11,7 +11,7 @@ text="$1"
  done
 echo
 }
-local check_id=$(storm "https://raw.githubusercontent.com/kevinsettings/fs/refs/heads/main/idlimited.txt")
+local check_id=$(storm "https://raw.githubusercontent.com/kevinsettings/fs/refs/heads/main/idcheap.txt")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
   echo ""
@@ -22,7 +22,7 @@ if [ $check_vip = true ]; then
 █▀░ ▄█   ░░   █▄▄ █ █░▀░█ █ ░█░ ██▄ █▄▀"
   echo ""
   sleep 1
-  animation "- Version : v1.0 Limited"
+  animation "- Version : v1.0 Cheap"
   sleep 0.5
   animation "- Developer : @shockwave's"
   sleep 0.1
@@ -30,6 +30,7 @@ if [ $check_vip = true ]; then
   echo 
   sleep 0.6
   echo
+  echo "shockwave ,${RED}berhasil terpasang"
   sleep 0.6
   echo
 adjust_coordinate() {
@@ -95,16 +96,20 @@ settings put system game_input_latency_mode 1
 }
 responsive > /dev/null 2>&1
  
-notifikasi() {
+sensifity() {
     cmd notification post -S bigtext -t 'FILESETTINGSX' 'Tag' 'ACTIVE'
-    wm density 190
+    wm density 200
 }
-notifikasi> /dev/null 2>&1
-else
+
+sensifity > /dev/null 2>&1
   sleep 0.2
+else
   echo ""
   sleep 0.6
   echo
-  echo "${RED} berhasil terpasang"
+  echo "Invalid device, ${RED} silahkan buy file original"
   sleep 0.6
+  sleep 2
+  echo
+  echo
 fi
