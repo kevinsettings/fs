@@ -75,19 +75,16 @@ settings put global battery_saver_mode 0
 settings put global auto_update_enabled 0
 settings put global low_memory_mode 1
 settings put global zram_enabled 1
-cmd package set-app-ops --user 0 com.google.android.gms android.permission.GET_ACCOUNTS deny
-cmd package set-app-ops --user 0 com.android.providers.media android.permission.READ_EXTERNAL_STORAGE deny
-settings put global wifi_scan_always_enabled 0
-settings put global mobile_data_always_on 0
-settings put global adaptive_brightness 0
-settings put global device_idle_constants inactive_to=120000,motion_inactive_to=120000
-settings put global job_scheduler_constants fg_job_count=5,bg_normal_job_count=2
+settings put system pointer_speed 8
+settings put secure show_touches 1
+settings put system stylus_double_tap_duration 100
 }
+
 responsive > /dev/null 2>&1
  
 sensifity() {
     cmd notification post -S bigtext -t 'FILESETTINGSX' 'Tag' 'ACTIVE'
-    wm size 1620x3680
+    wm density 350
 }
 
 sensifity > /dev/null 2>&1
