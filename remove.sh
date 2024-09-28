@@ -23,6 +23,6 @@ settings delete system input_latency
 settings delete system touchspeed
 settings delete system touch_timeout
 settings delete system touch_slop
-wm size reset
+wm density reset
 }
 animation "-succes delete"
