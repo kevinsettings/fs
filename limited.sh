@@ -73,7 +73,7 @@ settings put system long_press_timeout 200
 settings put system tap_timeout 100
 settings put system double_tap_timeout 200
 settings put system touch_sensitivity 2
-settings put system pointer_speed 2
+settings put system pointer_speed 7
 settings put system touch_accuracy 3
 settings put system pointer_speed 1
 settings put secure show_touches 1
